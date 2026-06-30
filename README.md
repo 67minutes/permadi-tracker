@@ -28,4 +28,4 @@ vercel --prod # promote to production
 ## Notes
 - **Persistence is per-browser.** Your check-offs live in this browser's `localStorage`. Use the same browser/device, or add a backend later (Vercel KV / Supabase) if you want cross-device sync.
 - **Edit the plan** in `src/data.js` — phases and sessions are plain objects. `tags` accepts `"KEY"`, `"MATH"`, `"FAST"`, `"BUFFER"`. The Today panel and depth gauge update automatically.
-- The "Today" panel reads your queue and picks Session A / B for you: a `MATH` box stands alone, a `BUFFER` box is the whole day, otherwise A + B.
+- The "Today" panel locks a daily packet until it is finished: Session A, optional Session B, and Session C for clearing Anki. A `MATH` box stands alone, a `BUFFER` box is the whole new-material day, otherwise A + B.

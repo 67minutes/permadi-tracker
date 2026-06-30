@@ -37,6 +37,9 @@ header{position:sticky;top:0;z-index:20;background:var(--ink);color:var(--paper)
 .slot:first-of-type{border-top:none;}
 .slot .box{flex:0 0 auto;width:20px;height:20px;border:1.5px solid #6b6359;border-radius:2px;
   display:flex;align-items:center;justify-content:center;font-size:13px;color:transparent;margin-top:1px;}
+.slot.done .box{background:var(--paper);border-color:var(--paper);color:var(--ink);}
+.slot.done .slot-title{text-decoration:line-through;text-decoration-thickness:1px;opacity:.6;}
+.slot.done .slot-label{opacity:.65;}
 .slot-label{font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:#b8b1a6;}
 .slot-title{font-size:14px;font-weight:600;margin-top:2px;color:var(--paper);}
 .slot-note{font-size:12.5px;color:#b8b1a6;padding:8px 0 2px;border-top:1px solid #2c2925;}
